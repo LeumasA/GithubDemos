@@ -1,13 +1,25 @@
 <html lang="en">
     <head>
-        <title>My GitHub Demos</title>
+        <title>WebApp Demos</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles.css" rel="stylesheet">
     </head>
-    <body>Welcome to my GitHub Demo Pages! <br>
+    <body>
+        <H1>Samuel Aina: WebApp Demos</H1>
+        <p>Welcome to the Webapp demos section of my portfolio. Here are some examples of independant projects I've completed using HTML, CSS and Javascript</p>
 
-    <a href="JS Password Generator/index.html">Demo 1</a><br/>
-    <a href="Demo2.html">Demo 2</a><br/>
-    <a href="Demo3.html">Demo 3</a><br/>
+        <div class="container" id="password-gen">
+            <H2>Password Generator</H2>
+            <p>This is my web based random password generator, a project I built using HTML, CSS and JavaScript for the page layout, styling and functionality respectivley. The "range and "checkpoint" inputs on the main HTML file allow the user to choose the password length, and the inclusion of upper cae letters, numbers and symbols, using a slider and tickboxes on the UI. The functions in the JavaScript end of the app randomly chooses characters using the charCode method, which assigns each ascii to a number ranging from 0 to 255. It then appends them to an initially empty list, and returns the result as a string displayed in the password display. the getElementsById and AddEventListener methods take in information inputted by the user so that the JS code can process it. </p>
+            <a class = "link" href="https://leumasa.github.io/GithubDemos/JS%20Password%20Generator/index.html">View project</a>
+        </div>
+
+        <div class="container" id = "calculator">
+            <H2>Calculator</H2>
+            <p>This is a web based caluculator. The layout was designed using HTML and CSS, with CSS especially being use to arrange each of the number and operand buttons as a grid below the display. In the JS code the calculator is written as it's own class, with functions for appending and removing numbers as a string on the display, choosing operands, and a "compute" function to make the actual calculations and return the result. There is also a function to update the display each time an input is made by the user. </p>
+            <a class="link" href="">View project</a>
+        </div>
+
 </body>
 </html>
